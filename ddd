@@ -2869,3 +2869,16 @@ mainGroup:addButton({
 
 library:refreshConfigs()
 library:autoLoadDefault()
+
+local __env = (getgenv and getgenv()) or _G
+__env.library        = library
+__env.mainTab        = mainTab
+__env.visualsTab     = visualsTab
+__env.gameVisualsTab = gameVisualsTab
+__env.combatTab      = combatTab
+__env.playerTab      = playerTab
+__env.worldTab       = worldTab
+__env.exploitTab     = exploitTab
+__env.soundsTab      = soundsTab
+__env.developerTab   = developerTab
+__env.hostonlyTab    = hostonlyTab
